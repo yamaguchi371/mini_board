@@ -25,6 +25,18 @@
     </head>
     <div role="main">
         <p>※メッセージは最大10個まで保管されます。</p>
+        <form method="post" action="/">
+            <p><span id="id"></span>
+            <input type="hidden" id="id_input" name="id" value=""></p>
+            <p><input type="text name="msg">
+            <input type="submit" value="送信"></p>
+        </form>
+        <hr>
+        <p><table style="width: 85%;">
+            <% for(var i in data) {} %>
+                <%- include('data_item', {val:data[i]}) %>
+            <% } %>
+        </table></p>
     </div>
     
 </body>
