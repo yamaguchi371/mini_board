@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" http-equiv="content-type" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミニ掲示板</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script>
+        function init(){
+            var id = localStorage.getItem('id');
+            if (id == null){
+                location.href = './login';
+            }
+            document.querySelector('#id').textContent = 'ID:' + id;
+            document.querySelector('#id_input').value = id;
+        }
+    </script>
+</head>
+<body onload="init()";>
+    <head>
+        <div class="container">
+            <h1>掲示板</h1>
+        </div>
+    </head>
+    <div role="main">
+        <p>※メッセージは最大10個まで保管されます。</p>
+    </div>
+    
+</body>
+</html>
