@@ -5,3 +5,5 @@
 - 7/8 作成開始
 
     - index.ejs追加
+
+- 7/9 login.ejs, data_item.ejs, app.js追加
